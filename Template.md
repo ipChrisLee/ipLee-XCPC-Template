@@ -343,6 +343,7 @@ struct USet{
             swap(xx,yy);
         }
         fa[yy]=xx;sz[xx]+=sz[yy];
+	return true;
     }
     int size(int x){
         return sz[findfa(x)];
